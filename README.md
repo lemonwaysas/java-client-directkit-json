@@ -9,3 +9,7 @@ To know the request format of each method, see http://documentation.lemonway.fr/
 $ mvn compile
 $ mvn exec:java -Dexec.mainClass="lw.api.client.Program"
 ```
+
+# Notice
+
+The JSON request must to contain ALL parameters, evens optionals one. For optional parameters, you could give empty string as value.

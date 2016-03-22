@@ -34,8 +34,7 @@ public class Program {
 			// Get Response
 			InputStream is = connection.getInputStream();
 			BufferedReader rd = new BufferedReader(new InputStreamReader(is));
-			StringBuilder response = new StringBuilder(); // or StringBuffer if
-															// not Java 5+
+			StringBuilder response = new StringBuilder(); // or StringBuffer if not Java 5+
 			String line;
 			while ((line = rd.readLine()) != null) {
 				response.append(line);
@@ -84,7 +83,7 @@ public class Program {
 			String jsonRequest = readResource("GetWalletDetails.001.json");
 			
 			//Send request (replace "hiep" by your company name)
-			String response = excutePost("https://ws.lemonway.fr/mb/hicham/dev/directkitjson/service.asmx/GetWalletDetails", jsonRequest);
+			String response = excutePost("https://ws.lemonway.fr/mb/hiep/dev/directkitjson/service.asmx/GetWalletDetails", jsonRequest);
 			
 			//display response
 			System.out.println(response);
